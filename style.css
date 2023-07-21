@@ -5,6 +5,7 @@
 }
 body{
     background: linear-gradient(to right, rgb(255, 255, 255), rgb(236, 233, 230));
+    height: 100vh;
 }
 input{
     all: unset;
@@ -12,7 +13,9 @@ input{
     font-size: 24px;
     border: solid 1px black;
     border-radius: 10px;
-    margin-right: 20px;
+    width: 80%
+  
+    
 
 }
 button{
@@ -25,11 +28,24 @@ button{
     cursor: pointer;
 }
 .main{
-    width: 500px;
+    max-width: 500px;
     background-color: white;
     margin: 0 auto;
     margin-top: 100px;
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.inputContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 10px;
     
 }
 .mealItem{
