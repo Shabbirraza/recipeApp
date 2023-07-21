@@ -69,9 +69,12 @@ async function openPopUp(e) {
         <img class="popImg" src=${FavMealChild2.meals[0].strMealThumb} />
         
         <p>${FavMealChild2.meals[0].strInstructions}</p>
+        <div style="width:100%;">
         <ul class="ingredientsList">
         ${ingredientsArray.map((e) => { return `<li >${e}</li>` })}
         </ul>
+        </div>
+      
                      
 `
    
